@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="introPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IntroController">
+   <children>
+      <TextField fx:id="minItemsField" layoutX="100.0" layoutY="40.0" />
+      <TextField fx:id="maxItemsField" layoutX="100.0" layoutY="80.0" />
+      <TextField fx:id="minCustomersField" layoutX="400.0" layoutY="40.0" />
+      <TextField fx:id="maxCustomersField" layoutX="400.0" layoutY="80.0" />
+      <TextField fx:id="numberOfCashiersField" layoutX="100.0" layoutY="120.0" />
+      <RadioButton fx:id="bufferedRadioButton" layoutX="99.0" layoutY="198.0" mnemonicParsing="false" selected="true" text="Buffered Simulation">
+         <toggleGroup>
+            <ToggleGroup fx:id="SimType" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="unbufferedRadioButton" layoutX="99.0" layoutY="237.0" mnemonicParsing="false" text="Unbuffered Simulation" toggleGroup="$SimType" />
+      <RadioButton fx:id="speedTurtleRadioButton" layoutX="372.0" layoutY="198.0" mnemonicParsing="false" selected="true" text="Turtle">
+         <toggleGroup>
+            <ToggleGroup fx:id="SimSpeed" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="speedRabbitRadioButton" layoutX="372.0" layoutY="254.0" mnemonicParsing="false" text="Llama" toggleGroup="$SimSpeed" />
+      <RadioButton fx:id="speedCheetahRadioButton" layoutX="372.0" layoutY="310.0" mnemonicParsing="false" text="Cheetah" toggleGroup="$SimSpeed" />
+      <Button fx:id="startButton" layoutX="124.0" layoutY="324.0" mnemonicParsing="false" onAction="#eventStartButton" text="Start" />
+      <Button fx:id="exitButton" layoutX="197.0" layoutY="324.0" mnemonicParsing="false" onAction="#eventExitButton" text="Exit" />
+      <Label fx:id="minItemLabel" layoutX="33.0" layoutY="44.0" text="Min items:" />
+      <Label fx:id="maxItemLabel" layoutX="30.0" layoutY="83.0" text="Max items:" />
+      <Label fx:id="minCustomersLabel" layoutX="302.0" layoutY="45.0" text="Min customers:" />
+      <Label fx:id="maxCustomersLabel" layoutX="300.0" layoutY="84.0" text="Max customers:" />
+      <Label fx:id="numberOfCashiersLabel" layoutX="5.0" layoutY="113.0" prefHeight="41.0" prefWidth="90.0" text="Number of cashiers:" textAlignment="RIGHT" wrapText="true" />
+      <Label fx:id="speedLabel" layoutX="372.0" layoutY="164.0" text="Simulation Speed" />
+      <Label layoutX="386.0" layoutY="220.0" text="1 Hr Simulation in 1 Hr of Time" />
+      <Label layoutX="386.0" layoutY="278.0" text="1 Hr Simulation in 30 Min of Time" />
+      <Label layoutX="389.0" layoutY="336.0" text="1 Hr Simulation in 1 Min of Time" />
+   </children>
+</Pane>

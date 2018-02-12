@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="575.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Reporting">
+   <children>
+      <Label fx:id="totalCustomers" layoutX="30.0" layoutY="35.0" text="Total Customers Checked Out:" />
+      <Label fx:id="customerLeft" layoutX="30.0" layoutY="70.0" text="Total Customers That Left Early:" />
+      <Label fx:id="totalItems" layoutX="30.0" layoutY="105.0" text="Total Items Purchased:" />
+      <Label fx:id="totalItemsAband" layoutX="30.0" layoutY="140.0" text="Total Items Abandoned:" />
+      <Label fx:id="customersInStore" layoutX="30.0" layoutY="175.0" text="Customers Still In Store:" />
+      <Label fx:id="averageCustomerTime" layoutX="30.0" layoutY="210.0" text="Average Customer Wait Time:" />
+      <Label fx:id="averageCashierWorkTime" layoutX="30.0" layoutY="245.0" text="Average Cashier Work Time:" />
+      <Label fx:id="totalCustomersCheckOutEDIT" layoutX="300.0" layoutY="35.0" text="EDIT" />
+      <Label fx:id="totalCustomersLeftEarlyEDIT" layoutX="300.0" layoutY="70.0" text="EDIT" />
+      <Label fx:id="totalItemsEDIT" layoutX="300.0" layoutY="105.0" text="EDIT" />
+      <Label fx:id="totalItemsAbandEDIT" layoutX="300.0" layoutY="140.0" text="EDIT" />
+      <Label fx:id="customersInStoreEDIT" layoutX="300.0" layoutY="175.0" text="EDIT" />
+      <Label fx:id="averageCustomerWaitEDIT" layoutX="300.0" layoutY="210.0" text="EDIT" />
+      <Label fx:id="averageCashierWorkEDIT" layoutX="300.0" layoutY="245.0" text="EDIT" />
+      <Button fx:id="buttonClose" layoutX="202.0" layoutY="320.0" mnemonicParsing="false" onAction="#evenCloseButton" text="Close" />
+   </children>
+</Pane>
